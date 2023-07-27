@@ -1,6 +1,6 @@
 appId: br.moura.mouralock.qa
 ---
-- runFlow: ../Login.yaml
+- runFlow: ../Login.yaml # Rodar o fluxo de login antes
 - tapOn: Conexão
 - assertVisible: BUSCAR DISPOSITIVOS
 - tapOn: "BUSCAR DISPOSITIVOS"
