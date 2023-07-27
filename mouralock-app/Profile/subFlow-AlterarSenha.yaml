@@ -1,0 +1,24 @@
+ appId: br.com.moura.mouralock.qa
+---
+- runFlow: Profile.yaml
+- tapOn: 'Alterar senha'
+- assertVisible: "Lembre que sua senha deve conter no mínimo 6 dígitos e utilizar letras e números."
+- tapOn: Senha atual  
+- inputText: 'daniel1'
+- tapOn:
+    id: "br.com.moura.mouralock.qa:id/text_input_end_icon"
+    index: 0
+- tapOn: Nova Senha
+- inputText: 'daniel1'
+- tapOn:
+    id: "br.com.moura.mouralock.qa:id/text_input_end_icon"
+    index: 1
+- tapOn: Confirmar nova senha
+- inputText: 'daniel1'
+- tapOn:
+    id: "br.com.moura.mouralock.qa:id/text_input_end_icon"
+    index: 2
+- back
+- tapOn: ALTERAR SENHA
+- assertVisible: Senha alterada\n com sucesso
+

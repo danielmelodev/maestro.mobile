@@ -1,0 +1,5 @@
+appId: br.com.moura.mouralock.qa
+---
+- runFlow: Profile.yaml
+- tapOn: 'Sair' 
+- tapOn: 'Sim' 

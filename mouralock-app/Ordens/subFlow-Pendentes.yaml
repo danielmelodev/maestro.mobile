@@ -1,0 +1,11 @@
+appId: br.com.moura.mouralock.qa
+---
+- runFlow: Ordens.yaml
+- tapOn:
+    id: "br.com.moura.mouralock.qa:id/tv_order_service_id"
+    index: 1
+- runFlow:
+    when:
+      visible: "INICIAR EXECUÇÃO"
+    file: "subFlow-ExecucaoOS.yaml"
+- back

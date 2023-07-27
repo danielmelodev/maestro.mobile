@@ -1,0 +1,7 @@
+appId: br.com.moura.mouralock.qa
+---
+- runFlow: Sites.yaml
+- tapOn: "SiteMoura"
+- scroll
+
+

@@ -1,0 +1,6 @@
+appId: br.moura.mouralock.qa
+---
+- runFlow: ../Login.yaml
+- tapOn: Conexão
+- assertVisible: BUSCAR DISPOSITIVOS
+- tapOn: "BUSCAR DISPOSITIVOS"

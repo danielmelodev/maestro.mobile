@@ -1,0 +1,18 @@
+appId: br.com.moura.mouralock.qa
+---
+- runFlow: Profile.yaml 
+- tapOn: 'Meus dados'
+- assertVisible: 
+    text: 'CPF'
+    text: 'E-mail'
+    text: 'Telefone'
+    text: 'Endereço'
+- assertVisible: "O e-mail do operador não pode ser alterado se este estiver vinculado a uma Ordem de Serviço."
+- assertVisible: 'Empresa'
+- tapOn: "Empresa"
+- assertVisible: 'Nome da Empresa'
+- assertVisible: 
+    text: 'Empresa'
+    enabled: true
+- back
+- back

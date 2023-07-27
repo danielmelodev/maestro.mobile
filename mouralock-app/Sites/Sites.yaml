@@ -1,0 +1,6 @@
+appId: br.com.moura.mouralock.qa
+---
+- runFlow: ../Login.yaml
+- tapOn: Sites
+
+    

@@ -1,0 +1,4 @@
+appId: br.com.moura.mouralock.qa
+---
+- tapOn: 'INICIAR EXECUÇÃO'
+- tapOn: 1
