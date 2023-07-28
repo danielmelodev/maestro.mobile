@@ -1,0 +1,10 @@
+appId: br.com.moura.mouralock.qa
+---
+- launchApp:
+    clearState: true
+- tapOn: 'Esqueci minha senha'
+- tapOn: E-mail
+- inputText: 'teste.maestro2023@gmail.com'
+- tapOn: LOCALIZAR CONTA
+- tapOn: IR PARA O LOGIN
+- runFlow: Email.yaml

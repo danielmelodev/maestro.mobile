@@ -1,0 +1,4 @@
+appId: com.easilydo.mail
+---
+- launchApp
+- tapOn: "Recuperação de senha"
