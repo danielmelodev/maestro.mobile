@@ -4,6 +4,6 @@ appId: br.com.moura.mouralock.qa # Informa o APP a ser utilizado
     clearState: true  # Inicializa o APP
 - tapOn: "E-mail" # Toca no elemento "e-mail"
 - inputText: 'danielmelo3arc@gmail.com' # Insere o texto no campo selecionado
-- tapOn: 'se'
+- tapOn: 'senha'
 - inputText: 'daniel1'
 - tapOn: ENTRAR
