@@ -1,0 +1,10 @@
+appId: br.com.moura.mouralock.qa
+---
+- tapOn: 'DESTRAVAR BATERIAS'
+- tapOn: 'Trava 1'
+- tapOn: 'Trava 2'
+- tapOn: 'Trava 3'
+- tapOn: 'Trava 4'
+- back
+- tapOn: "OK, AVANÇAR"
+- assertVisible: 'Destravadas'

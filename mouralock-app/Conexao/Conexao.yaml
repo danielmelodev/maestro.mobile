@@ -1,6 +1,20 @@
 appId: br.moura.mouralock.qa
 ---
 - runFlow: ../Login.yaml
-- tapOn: Conexão
-- assertVisible: BUSCAR DISPOSITIVOS
+- tapOn: 'Conexão'
+- assertVisible: 'BUSCAR DISPOSITIVOS'
 - tapOn: "BUSCAR DISPOSITIVOS"
+- tapOn: "ID: E4:20:C5:20:B0:47"
+- tapOn: 'CONECTAR'
+- runFlow:
+    when:
+      visible: "Destravadas"
+    file: "subFlow-Baterias-Travadas.yaml"
+- runFlow:
+    when:
+      visible: "Travadas"
+    file: "subFlow-Baterias-Destravadas.yaml"
+
+
+
+
