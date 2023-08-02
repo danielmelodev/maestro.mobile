@@ -2,7 +2,10 @@ appId: br.com.moura.mouralock.qa
 ---
 - tapOn: 'INICIAR EXECUÇÃO'
 - tapOn: 1
-- tapOn: BUSCAR DISPOSITIVO
-- tapOn: "ID: E4:20:C5:20:B0:47"
-- tapOn: CONECTAR
+- tapOn: 'BUSCAR DISPOSITIVOS'
+- runFlow: 
+    when: 
+      visible:  "ID: E4:20:C5:20:B0:47"
+    file: './subFlow-Dispositivo.yaml'
+- back
 

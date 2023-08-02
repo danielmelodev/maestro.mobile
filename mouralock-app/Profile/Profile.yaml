@@ -1,6 +1,6 @@
 appId: br.com.moura.mouralock.qa
 ---
-- runFlow: ../Login.yaml # Roda os comandos do arquivo "Login.yaml"
+- runFlow:  ../Login/Login.yaml # Roda os comandos do arquivo "Login.yaml"
 - assertVisible: 
     text: 'Olá,'
 - tapOn: 'Olá,'

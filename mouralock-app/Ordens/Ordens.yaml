@@ -1,6 +1,13 @@
 appId: br.com.moura.mouralock.qa
 ---
-- runFlow: ../Login.yaml
+- runFlow: ../Login/Login.yaml
 - tapOn: Ordens
-- assertVisible: Pendentes
+- runFlow: 
+    when: 
+      visible: 'Pendentes'
+    file: "./subFlow-Pendentes.yaml"
+- runFlow: 
+    when:
+      visible: 'Histórico'
+    file: "./subFlow-Historico.yaml"
 

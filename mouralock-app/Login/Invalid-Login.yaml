@@ -1,0 +1,9 @@
+appId: br.com.moura.mouralock.qa
+---
+- launchApp:
+    clearState: true
+- tapOn: "e-mail"
+- inputText: 'teste@mail.com'
+- tapOn: "senha"
+- inputText: '          '
+- tapOn:  "ENTRAR"

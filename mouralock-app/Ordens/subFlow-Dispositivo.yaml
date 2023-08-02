@@ -1,0 +1,5 @@
+appId: br.com.moura.mouralock.qa
+---
+- tapOn: BUSCAR DISPOSITIVO
+- tapOn: "ID: E4:20:C5:20:B0:47"
+- tapOn: CONECTAR

@@ -1,9 +1,13 @@
 appId: br.com.moura.mouralock.qa
 ---
-- runFlow: Ordens.yaml
 - assertVisible: Histórico
 - tapOn: Histórico
 - tapOn:
     id: "br.com.moura.mouralock.qa:id/tv_order_service_id"
     index: 0
+- tapOn:
+    id: "br.com.moura.mouralock.qa:id/card_order_service"
+- assertVisible: 'Detalhes'
+- tapOn: 'Tarefas'
+- assertVisible: 'Tarefas'
 
